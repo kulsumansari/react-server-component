@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+## React Server Components
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React has recently introduced a groundbreaking developer paradigm known as React Server Components (RSCs). This innovative approach offers new possibilities for server-side rendering and dynamic loading in React applications. RSCs aim to address some challenges associated with traditional client-side rendering, particularly in terms of performance, initial page load times, and efficient use of server resources.
 
-## Available Scripts
+Checkout [React Server Components on medium](https://medium.com/@kulsumansari4/react-server-components-a1edc1de6a72) to understand RSCs.
 
-In the project directory, you can run:
 
-### `npm start`
+### Server Actions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Server actions are the ways a client component can communicate to server. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Here, 
 
-### `npm test`
+[Counter component](https://github.com/kulsumansari/react-server-component/blob/master/src/components/counter.js) - is a client component which communicate with server on every button hit the increament happens at server and the result is sent to the client. The response from server should always be serializable
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[BlogPosts component](https://github.com/kulsumansari/react-server-component/blob/master/src/components/BlogPosts.js)- this components fetches posts from server on a user interactivity with client using server actions.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
